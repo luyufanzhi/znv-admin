@@ -1,0 +1,468 @@
+.map-infowindow-content tr td:last-child {
+  padding-left: 10px;
+}
+
+.amap-info .amap-info-content {
+  background: transparent;
+  border: 0px solid #091765;
+  color: #9ed2ff;
+  box-shadow: 0;
+}
+
+.amap-info .amap-info-content:hover {
+  box-shadow: 0;
+}
+
+.map-infowindow-content .deviceName {
+  color: #00f0ff;
+}
+
+.map-infowindow-content .deviceStateOK {
+  color: #20b844;
+}
+
+.map-infowindow-content .deviceStateError {
+  color: #ff0000;
+}
+
+
+.imap-marker-icon {
+  background-size: 100% 100% !important;
+}
+
+.map-infowindow-content .rest {
+  color: #ffa12e;
+}
+
+.map-infowindow-content .goOut {
+  color: #2edcff;
+}
+
+.map-dialog {
+  width: 400px;
+  position: relative;
+  /*padding: 15px 15px 0 0;*/
+  border: 1px solid #01b7c4;
+}
+
+/*
+.map-dialog:after, .map-dialog:before {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border: solid transparent;
+    pointer-events: none;
+    content: "";
+    border-color: rgba(136, 183, 213, 0);
+}
+
+.map-dialog:after {
+    border-top-color: transparent;
+    border-width: 10px;
+    left: 50%;
+    margin-left: -10px;
+    top: 100%;
+}
+
+.map-dialog:before {
+    border-top-color: #2662EA;
+    border-width: 12px;
+    left: 49%;
+    margin-left: -10px;
+    top: 100%;
+}*/
+
+.map-dialog-hd {
+  position: relative;
+  height: 24px;
+  background: rgba(0, 91, 193, 0.9);
+}
+
+.map-dialog-content {
+  background: rgba(0, 91, 193, 0.9);
+}
+
+.map-device-text {
+  width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.map-dialog-hd .figure1 {
+  width: 80px;
+  height: 80px;
+  margin-top: 28px;
+  margin-left: 36px;
+  float: left;
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.map-dialog-ft {
+  height: 30px;
+  margin-top: -20px;
+  text-align: right;
+  background: rgba(0, 91, 193, 0.9);
+}
+
+.map-dialog-ft a {
+  color: #fff;
+  cursor: pointer;
+  margin-right: 15px;
+  display: none;
+}
+
+.map-info-table {
+  width: 100%;
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  color: #9ed2ff;
+}
+
+.map-device-detail {
+  padding: 0 12px 24px;
+}
+
+.map-device-name {
+  width: 74px;
+  text-align: right;
+}
+
+.map-info-table .name {
+  color: #00f0ff;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Microsoft YaHei";
+}
+
+.map-info-table .state {
+  color: #20b844;
+}
+
+.map-info-table td {
+  padding: 5px;
+  text-align: left;
+  /*white-space:nowrap;
+  text-overflow:ellipsis;
+  width:80px;
+  overflow:hidden;*/
+
+}
+
+.map-dialog-close {
+  z-index: 9;
+  width: 31px;
+  height: 31px;
+  position: absolute;
+  right: -13px;
+  top: -13px;
+  background: url(../../assets/common/map/dialog-close.png);
+  display: inline-block;
+}
+
+.map-video-dialog {
+  padding: 25px;
+}
+
+.map-video-dialog .map-dialog-close {
+  right: 0;
+  top: 0;
+}
+
+.map-dialog-hd .figure2 :hover {
+  cursor: pointer;
+}
+
+.map-video-dialog {
+  width: 400px;
+  height: 300px;
+}
+
+.map-video-dialog object {
+  width: 100%;
+  height: 100%;
+}
+
+.map-attach-video-dialog {
+  width: 400px;
+  /*height: 454px;*/
+}
+
+.map-attach-video-dialog object {
+  display: block;
+  width: 100%;
+  height: 210px;
+}
+
+.map-face-dialog .map-dimg, .map-img-dialog .map-dimg {
+  text-align: center;
+}
+
+.map-face-dialog .map-dimg img, .map-img-dialog .map-dimg img {
+  height: 180px;
+  max-width: 242px !important;
+}
+
+.map-face-dialog .map-device-name, .map-img-dialog .map-device-name {
+  width: 68px;
+}
+
+.map-face-dialog .map-device-text, .map-img-dialog .map-device-text {
+  width: 170px;
+}
+
+.lineMarker-dialog .map-dialog-close {
+  display: none;
+}
+
+.map-dialog-triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid rgba(12, 42, 112, .75);
+  position: absolute;
+  bottom: -21px;
+  left: 50%;
+  margin-left: -10px;
+}
+
+.lineMarker-dialog .map-dialog-triangle-down {
+  display: block;
+}
+
+.amap-info-outer, .amap-menu-outer {
+  box-shadow: 0 3px 14px transparent;
+  background: #fff;
+  border-radius: 2px;
+  padding: 1px;
+  text-align: left;
+  border: 1px solid silver
+}
+
+.amap-info-outer:hover, .amap-menu-outer:hover {
+  box-shadow: 0 3px 14px transparent;
+}
+
+.amap-info-content {
+  padding: 15px 15px 0 0;
+}
+
+.amap-info-close {
+  display: none;
+}
+
+.amap-info-sharp {
+  /*display: none;*/
+  background: transparent;
+  position: relative;
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #2662EA transparent transparent transparent; /* transparent 设置边框颜色透明 */
+}
+
+
+.unitLegalPersonCard {
+  cursor: pointer;
+}
+
+.amap-marker-label, .imap-label {
+  background-color: transparent !important;
+  border: 0;
+  text-align: center;
+  padding: 0 10px;
+}
+
+/*聚合样式*/
+
+
+@keyframes pulse {
+  0% {
+    transform: scaleX(1)
+  }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05)
+  }
+  to {
+    transform: scaleX(1)
+  }
+}
+
+.znv-map-cluster {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  z-index: 10000;
+  line-height: 50px;
+  text-align: center;
+  display: inline-block;
+}
+
+.znv-map-excircle {
+  /*
+    animation-duration:1s;animation-fill-mode:both;
+    animation-iteration-count:infinite;
+    animation-name:pulse;
+    */
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  /*@include znv-box-shadow(inset 0 0 10px #f3c41a,inset 0 0 10px $color-bg-map-excircle-dark);*/
+  box-shadow: inset 0 0 10px $color-bg-map-excircle-dark;
+  //border: 1px solid rgba(243,196,26,0.3);
+}
+
+.znv-map-incircle {
+  width: 36px;
+  height: 36px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px;
+  /*@include znv_bg(#f6f917, $color-font-yellow);*/
+  background: $color-font-yellow;
+  color: #041d29;
+  display: inline-block;
+}
+
+.znv-map-cluster0 {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.znv-map-cluster0 .znv-map-incircle {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+}
+
+.znv-map-cluster1 {
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+}
+
+.znv-map-cluster1 .znv-map-incircle {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.znv-map-cluster3 {
+  width: 58px;
+  height: 58px;
+  line-height: 58px;
+
+}
+
+.znv-map-cluster3 .znv-map-incircle {
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+}
+
+.znv-map-cluster4 {
+  width: 74px;
+  height: 74px;
+  line-height: 74px;
+}
+
+.znv-map-cluster4 .znv-map-incircle {
+  width: 58px;
+  height: 58px;
+  line-height: 58px;
+}
+
+.znv-map-cluster5 {
+  width: 84px;
+  height: 84px;
+  line-height: 84px;
+}
+
+.znv-map-cluster5 .znv-map-incircle {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+}
+
+.znv-map-cluster6 {
+  width: 96px;
+  height: 96px;
+  line-height: 96px;
+}
+
+.znv-map-cluster6 .znv-map-incircle {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+}
+
+.znv-map-cluster7 {
+  width: 102px;
+  height: 102px;
+  line-height: 102px;
+}
+
+.znv-map-cluster7 .znv-map-incircle {
+  width: 86px;
+  height: 86px;
+  line-height: 86px;
+}
+
+.znv-map-cluster8 {
+  width: 108px;
+  height: 108px;
+  line-height: 108px;
+}
+
+.znv-map-cluster8 .znv-map-incircle {
+  width: 92px;
+  height: 92px;
+  line-height: 92px;
+}
+
+.znv-map-alarm {
+  display: inline-block;
+  height: 24px;
+  /*@include znv_bg(rgba(92, 233, 244, .7),$color-bg-map-alarm-dark);*/
+  background: $color-bg-map-alarm-dark;
+  line-height: 24px;
+  border-radius: 12px;
+  padding: 0 15px;
+  color: #fff;
+  position: relative;
+  margin-top: 12px;
+  margin-bottom: -36px;
+}
+
+.znv-map-triangle-t {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-width: 0 10px 10px;
+  border-style: solid;
+  /*@include znv-border_color(transparent transparent rgba(92, 233, 244, .7),transparent transparent $color-bg-map-alarm-dark);*/
+  border-color: transparent transparent $color-bg-map-alarm-dark;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: -9px;
+  margin-left: -10px;
+}

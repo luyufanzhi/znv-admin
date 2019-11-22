@@ -1,0 +1,28 @@
+@w: .px2vw(12)[@result];
+@bg-h: .px2vh(4)[@result];
+@color: #3189E4;
+
+/deep/ .el-slider {
+    .el-slider__button {
+        width: @w;
+        height: @w;
+        background-color: @color;
+        border-color: #3189E4;
+        box-sizing: border-box;
+    }
+
+    .el-slider__runway {
+        height: @bg-h;
+        background-color: #06182E;
+        margin: .px2vh(20)[@result] 0;
+    }
+
+    .el-slider__bar {
+        height: @bg-h;
+        background-color: @color;
+    }
+
+    .el-slider__button-wrapper {
+        top: -17px;
+    }
+}

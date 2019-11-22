@@ -1,0 +1,17 @@
+input::-ms-clear{display:none;}
+input::-ms-reveal{display:none;}
+html,body{width:100%;height:100%;overflow: hidden;}
+.main{position:relative;overflow:hidden;width:1920px;height:1080px;background:#040b24 url(../images/bg.png) no-repeat center center/cover;font-family:"微软雅黑";}
+
+
+
+#container{width: 1920px;height: 1080px;position: absolute;z-index: 100;left: 0;}
+.ring{background: url(../images/ring.png) no-repeat;width: 338px;height: 341px;position: absolute;z-index: 101;left: 782px;top: 228px;animation: spin 30s linear infinite;}
+ @keyframes spin {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(-360deg);
+                }
+            }

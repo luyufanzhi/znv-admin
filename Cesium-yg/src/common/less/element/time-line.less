@@ -1,0 +1,70 @@
+// 线
+/deep/ .el-timeline-item__tail {
+
+}
+
+/deep/ .el-timeline-item__wrapper {
+    padding-left: @w40;
+    padding-bottom: @h10;
+}
+
+// 节点, 圆点
+/deep/ .el-timeline-item__node {
+    width: @w20;
+    height: @w20;
+    border: 1px solid #fff;
+}
+/deep/ li:last-child .el-timeline-item__node {
+    // background-image: url("/static/img/large-screen/camera.png");
+    .setBg();
+    // background-color: transparent;
+    width: .px2vw(46)[@result];
+    height: .px2vw(46)[@result];
+    transform: translateX(-35%) translateY(-50%);
+    background: radial-gradient( #D1292C, #EF4552 );
+
+    &::before {
+        content: "终";
+        position: absolute;
+        left: 0;
+        top: 0;
+        .setWH();
+        line-height: .px2vw(46)[@result];
+        font-size: .px2vw(25)[@result];
+        text-align: center;
+    }
+
+}
+/deep/ li:nth-child(1) .el-timeline-item__node {
+    // background-image: url("/static/img/large-screen/camera.png");
+    .setBg();
+    // background-color: transparent;
+    width: .px2vw(46)[@result];
+    height: .px2vw(46)[@result];
+    transform: translateX(-31%) translateY(-50%);
+    background: radial-gradient( #16D148, #3EEE88 );
+
+    &::before {
+        content: "起";
+        position: absolute;
+        left: 0;
+        top: 0;
+        .setWH();
+        line-height: .px2vw(46)[@result];
+        font-size: .px2vw(25)[@result];
+        text-align: center;
+    }
+}
+
+// 内容
+/deep/ .el-timeline-item__content {
+    color: #5D9BDB;
+    font-size: .px2vh(14)[@result];
+    margin-bottom: 2vh;
+}
+
+// 时间戳
+/deep/ .el-timeline-item__timestamp {
+    color: #fff;
+    font-size: .px2vh(14)[@result];
+}

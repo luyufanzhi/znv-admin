@@ -1,0 +1,41 @@
+// @import "./magnet-tab.less";
+
+/deep/ .el-tabs__item {
+    &::after, &::before {
+        content: none;
+    }
+
+    // background: rgba(67,113,247,1);
+    background-color: transparent;
+    color: rgba( 255, 255, 255, .5 );
+    border-radius: 3px;
+    font-size: 1.42vh;
+    // 2.84vh
+    line-height: 3vh;
+    height: 3vh;
+    width: 6.1vw;
+    padding: 0;
+    text-align: center;
+    margin-left: .7vw;
+    margin-right: .3vw;
+    margin-top: 1.42vh;
+    margin-bottom: 1.42vh;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    // opacity: .5;
+
+    &.is-active {
+        background-color: rgba(67,113,247,1);
+        color: #fff;
+        // opacity: 1;
+    }
+}
+
+/deep/ .el-tabs__content {
+    background-color: transparent;
+    border-style: none;
+    background-color: transparent;
+    box-shadow: none;
+    // height:
+}

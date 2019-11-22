@@ -1,0 +1,11 @@
+{
+  "name": "playerwithmap",
+  "version": "2.0.0",
+  "description": "其他模块下使用.",
+  "main": "index.vue",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PinghuaZhuang",
+  "license": "ISC"
+}

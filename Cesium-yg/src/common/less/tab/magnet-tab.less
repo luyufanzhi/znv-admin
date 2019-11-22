@@ -1,0 +1,147 @@
+/deep/ .g-content {
+    // .setWH();
+    // display: flex;
+    // flex-direction: column;
+    // align-items: stretch;
+    // justify-content: space-between;
+    .el-tabs__header {
+        // display: none;
+        border-style: none;
+        border-width: 0;
+    }
+}
+
+/deep/ .el-tabs__nav-wrap {
+    padding: 0;
+    margin-bottom: 0px;
+
+    .el-tabs__nav {
+        border-style: none;
+    }
+
+    .el-tabs__header {
+        width: 100%;
+    }
+
+    .el-tabs__item:focus.is-active.is-focus:not(:active) {
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .el-tabs__item {
+        @color: #005BC1;
+        @scale: 100%;
+        min-width: 5.3vw;
+        height: 1.7vw;
+        line-height: 1.7vw;
+        // background: linear-gradient(180deg,rgba(107,187,255,1),rgba(0,138,255,1),rgba(0,95,176,1));
+        // background-color: #005BC1;
+        // color: #fff;
+        color: #C2E2FF;
+        background:rgba(0,84,169,0.7);
+        border-style: none;
+        text-align: left;
+        padding: 0;
+        font-size: 1vw;
+        font-weight: normal;
+        // text-indent: .8vw;
+        padding-left: .8vw;
+        padding-right: .1vw;
+        // border-right: 1vw solid transparent;
+        margin-right: .9vw;
+        text-indent: 0;
+        .setRelative();
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        // overflow: hidden;
+
+        &:nth-child(1) {
+            z-index: 4;
+            // text-indent: .8vw;
+        }
+        &:nth-child(2) {
+            z-index: 3;
+        }
+        &:nth-child(3) {
+            z-index: 2;
+        }
+
+        &.is-focus {
+            out-line: none;
+            border-style: none;
+        }
+
+        &.is-active::after {
+            border-left: 1vw/2 solid @color;
+            border-bottom: 1.7vw/2 solid @color;
+        }
+
+        &.is-active{
+            background-color: @color;
+            color: #fff;
+            // text-indent: .8vw;
+            // width: 6.3vw;
+            // z-index: 1;
+        }
+
+        &:not(:nth-child(1))::before {
+            content: "";
+            position: absolute;
+            left: -1vw;
+            top: 0;
+            .setBg();
+            background-size: 105%;
+            // transform: translateX(-@scale);
+            border-left: 1vw/2 solid transparent;
+            border-right: 1vw/2 solid rgba(0,84,169,0.7);
+            border-top: 1.7vw/2 solid rgba(0,84,169,0.7);
+            border-bottom: 1.7vw/2 solid transparent;
+        }
+
+        &.is-active:not(:nth-child(1))::before {
+            border-right: 1vw/2 solid @color;
+            border-top: 1.7vw/2 solid @color;
+        }
+
+        &::after {
+            // .setWH( 1vw, 1.7vw );
+            content: "";
+            // background: red;
+            position: absolute;
+            right: -1vw;
+            top: 0;
+            // transform: translateX(@scale);
+            .setBg();
+            // background-image: url('/static/img/large-screen/magnet.png');
+            // .setWH( 20px, 100% );
+            // border-left: 1vw/2 solid #005BC1;
+            border-left: 1vw/2 solid rgba(0,84,169,0.7);
+            border-right: 1vw/2 solid transparent;
+            border-top: 1.7vw/2 solid transparent;
+            // border-bottom: 1.7vw/2 solid #005BC1;
+            border-bottom: 1.7vw/2 solid rgba(0,84,169,0.7);
+        }
+    }
+}
+
+/* 内容 */
+/deep/ .el-tabs__content {
+    // width: 19.8vw;
+    // height: 12.7vw;
+    height: 22.5vh;
+    background:rgba(7,32,69,0.6);
+    border:1px solid rgb(184, 215, 231);
+    box-shadow:0px 0px 32px 0px rgba(0,174,255,0.31);
+    color: #fff;
+
+    .el-tab-pane {
+        height: 100%;
+        > div {
+            .setWH();
+        }
+    }
+}
+
+/deep/ .el-tabs__header {
+    margin-bottom: 0;
+}

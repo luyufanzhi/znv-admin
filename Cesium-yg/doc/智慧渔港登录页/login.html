@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<script type="text/javascript">
+		window.onload = function() {
+			screen();
+			creatList();
+		}
+		window.onresize = function() {
+			screen();
+		}
+	</script>
+
+	<body>
+		<div class="main" id="login">
+			<div class="ring"></div>
+			<ul id="container"></ul>
+		</div>
+		
+	</body>
+
+	<script type="text/javascript">
+		function screen() {
+			const contW = 1920;
+			const contH = 1080;
+			let cliWidth =
+				document.documentElement.clientWidth || document.body.clientWidth;
+			let cliHeight =
+				document.documentElement.clientHeight || document.body.clientHeight;
+			let w = cliWidth / contW;
+			let h = cliHeight / contH;
+
+			let bg = document.getElementById("login");
+			if(bg) {
+				bg.style.transform = "scale(" + w + "," + h + ")";
+				bg.style.transformOrigin = "0px 0px";
+			}
+		}
+
+		function creatList() {
+			var oUl = document.getElementById("container");
+			var str = "";
+			for(var i = 0; i < 36; i++) {
+				str += "<li class='circle-container'><span class='circle'></span></li>"
+			}
+			oUl.innerHTML = str;
+		}
+	</script>
+
+</html>

@@ -1,0 +1,93 @@
+//底色
+@bluebg:#1E2B43;
+
+//边框色
+@border: #027DEB;
+
+@baseHeight: 1080;
+@baseWidth: 1920;
+
+.px2vh (@px) {
+    @result: @px/@baseHeight *100vh ;
+}
+.px2vw (@px) {
+    @result: @px/@baseWidth *100vw ;
+}
+.bg-image(@url) {
+    background: @url
+}
+.shadow{
+    box-shadow:0px 0px .px2vw(30)[@result] #13578f inset;
+}
+
+.abs{
+    position: absolute;left:0;right:0;bottom:0;top:0;margin:auto;
+}
+
+.txtStroke(@len, @color) {
+    text-shadow: 0 @len @color, @len 0 @color, -@len 0 @color, 0 -@len @color;
+}
+
+/* 间隙 */
+@grap-6vh: .px2vh(6)[@result];
+@grap-14vh: .px2vh(14)[@result];
+@grap-15vh: .px2vh(15)[@result];
+@grap-16vh: .px2vh(16)[@result];
+@grap-17vh: .px2vh(17)[@result];
+
+@grap-6vw: .px2vw(6)[@result];
+@grap-14vw: .px2vw(14)[@result];
+@grap-15vw: .px2vw(15)[@result];
+@grap-16vw: .px2vw(16)[@result];
+@grap-17vw: .px2vw(17)[@result];
+
+/* 边框 */
+@radius-3: .px2vw(3)[@result];
+@radius-5: .px2vw(5)[@result];
+
+/* 透明度 */
+@opacity: .8;
+
+/* 层级 */
+// 图片层级
+@zIndex-img: 10;
+// 磁贴层级
+@zIndex-magnet: 40;
+// 工具栏高度
+@zIndex-tool: 30;
+// 组件
+@zIndex-view: 50;
+@zIndex-tip: 1000;
+@zIndex-mask: @zIndex-tip - 1;
+
+/* 主题色, 只有某些用到.. 不起到修改主题的效果. */
+@th-bg: #193f61;
+@th-active: #00ffff;
+@th-border: #2fb8ff;
+@color-blue: #72B2FF;
+
+@h10: .px2vh( 10 )[@result];
+@h16: .px2vh( 16 )[@result];
+@h18: .px2vh( 18 )[@result];
+@h15: .px2vh(15) [@result];
+@h20: .px2vh( 20 )[@result];
+@h30: .px2vh( 30 )[@result];
+@h40: .px2vh( 40 )[@result];
+@h50: .px2vh( 50 )[@result];
+@h60: .px2vh( 60 )[@result];
+@h70: .px2vh( 70 )[@result];
+
+@w10: .px2vw( 10 )[@result];
+@w15: .px2vw(15) [@result];
+@w20: .px2vw( 20 )[@result];
+@w30: .px2vw( 30 )[@result];
+@w40: .px2vw( 40 )[@result];
+@w50: .px2vw( 50 )[@result];
+@w60: .px2vw( 60 )[@result];
+@w70: .px2vw( 70 )[@result];
+
+@nav-border: rgba(47,184,253,0.3);
+@border6: rgba(61,150,214,0.6);
+@btnGradient: linear-gradient(180deg,rgba(94,173,255,1),rgba(18,117,255,1),rgba(12,76,163,1));
+@shadow-inner: 0 0 2px rgba(255,255,255,1) inset;
+@wrapBg: #0f2a4c;

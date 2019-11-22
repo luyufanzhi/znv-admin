@@ -1,0 +1,11 @@
+{
+  "name": "columtab",
+  "version": "1.0.0",
+  "description": "首页竖向tab栏.",
+  "main": "./columTab.vue",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

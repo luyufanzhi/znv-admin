@@ -1,0 +1,197 @@
+//背景
+$color-bg-1: #1a3343; // 主页背景
+$color-bg-2: #142059; // 二级页面背景
+$color-bg-3: rgba(59,109,188,0.2); // 模块背景
+$color-bg-4: radial-gradient(circle,rgba(24,49,89,1) 0%,rgba(5,5,13,1) 100%);// 背景色
+$color-bg-table-hover: rgba(41,162,255,0.2); // table背景
+$color-bg-table2-hover: rgba(42,92,192,0.1); // table背景2
+$color-bg-input: RGBA(9, 24, 54, 1); // input背景
+$color-bg-select: RGBA(9, 24, 54, 1); // select下拉框背景色
+$color-bg-select-hover: RGBA(61, 150, 214, 1); // select下拉框hover背景色
+$color-bg-dialog: #15539d; // 弹出框背景色
+$color-bg-msg: rgba(7, 32, 69, 1); // 提示 通知 alert等背景色
+$color-bg-pagination: #61cfeb; // 提示 通知 alert等背景色
+$color-bg-scrollbar: #52FEFB; // 滚动条背景色
+$color-bg-scrollbar1: #40B5B3; // 滚动条背景色
+
+/*背景默认主题*/
+$color-bg-znv-panel-tree: linear-gradient(90deg,rgba(22,39,70,0.29),rgba(7,90,161,0.29));
+$color-bg-znv-panel: linear-gradient(0deg,rgba(5,5,14,0.8) 0%,rgba(29,65,117,0.8) 100%);
+$color-bg-znv-tab: #213966;
+$color-bg-znv-tab-active: linear-gradient(180deg,rgba(81,186,255,1),rgba(0,139,255,1),rgba(1,83,179,1));
+$color-bg-znv-triangle-active: url("../../assets/public/tab-angle.png") 0 0 no-repeat;
+$color-bg-znv-alarm-tab: url("../../../assets/policeHome/tab-long.png") 208px 34px;
+$color-bg-znv-tree-btn: url('../assets/public/r-rect-left.png') no-repeat right 0;
+$color-bg-znv-user: url("../assets/public/r-rect-right.png") no-repeat center center;
+$color-bg-znv-item: url("../../assets/wallMapFight/menu-bg.png") no-repeat right 0;
+$color-bg-znv-item-active: url("../../assets/wallMapFight/menu-bg-active.png") no-repeat right 0;
+$color-bg-video-selected: #2047D2;
+$color-bg-dialog: #15539d;
+$color-bg-dialo2:linear-gradient(180deg,rgba(29,65,117,0.8),rgba(5,5,14,0.8));
+$el-table-th-color-dark: #666;
+$el-table-tr-color-dark: transparent;
+$color-bg-table-hover: #266AA0;
+$house-unit-bg: rgba(59,109,188,1);
+$house-unit-bg-active: #347cf0;
+$th-bg: #0f2e4c;
+$color-bg-dark: #fff;
+$color-bg-dialog__header: linear-gradient(0deg,rgba(10,19,38,1),rgba(6,102,183,1),rgba(14,152,255,1));
+
+
+/*背景黑色主题*/
+$color-bg-menu-dark: linear-gradient(0deg,rgba(50,53,68,1),rgba(66,71,89,1));
+$color-bg-menu-left-dark: url("../assets/topNav/background2.png") no-repeat;
+$color-menu:linear-gradient(180deg, rgba(92, 124, 204, 1), rgba(71, 102, 178, 1));
+$color-bg-znv-panel-dark: linear-gradient(0deg,rgba(21,22,31,0.8),rgba(66,71,89,0.8));
+$color-bg-znv-panel-top-dark:linear-gradient(0deg, #323544, #424759);
+$color-bg-znv-tab-dark: rgba(19,26,64,0.8);
+$color-bg-znv-dialog-tab-dark: rgba(98,136,217,0.6);
+$color-bg-znv-triangle-dark: rgba(19,26,64,0.8);
+$color-bg-znv-tab-active-dark: linear-gradient(180deg,rgba(140,171,230,1),rgba(48,72,140,1));
+$color-bg-znv-dialog-tab-active-dark: #6288D9;
+$color-bg-znv-triangle-active-dark: url("../../assets/public/tab-angle-active-dark.png") 0 0 no-repeat;
+$color-bg-znv-alarm-tab-dark: url("../../../assets/policeHome/tab-long-dark.png") 208px 34px;
+$color-bg-znv-tree-btn-dark: url('../assets/public/r-rect-left-dark.png') no-repeat right 0;
+$color-bg-znv-user-dark: url("../assets/public/r-rect-right-dark.png") no-repeat left;
+$color-bg-znv-item-dark: url("../../assets/wallMapFight/menu-bg-dark.png") no-repeat right 0;
+$color-bg-znv-item-dark-active: url("../../assets/wallMapFight/menu-bg-dark-active.png") no-repeat right 0;
+$color-bg-znv-page-dark: url("../../assets/fileImages/background2_dark.png") no-repeat; //一人一档  一车一档背景
+$color-bg-video-selected-dark: #4766B2;
+$color-bg-dialog-dark: #F6F6F6;
+$color-bg-dialog-panel-alarm:rgba(41,109,194,0.2);
+$color-bg-dialog__header-dark: linear-gradient(180deg,rgba(66,71,89,0.8),rgba(21,22,31,0.8));
+$el-table-th-color-dark: #666;
+$el-table-td-color-dark: #333;
+$color-border-table-dark: #A1AAC2;
+$color-bg-table-th-dark: rgba(19,26,65,0.4);
+$color-bg-table-hover-dark: rgba(187,187,187,0.5);
+$color-bg-input-dark: #fff;
+$color-border-input-dark: #dbdbdb;
+$color-bg-3-dark: rgba(98,136,217,0.2);
+$color-border-4-dark: #8CABE6;
+$color-bg-3-dark-active: #6288D9;
+$color-bg-4-dark-active: rgba(66,71,89,0.8);
+$color-bg-3-dark-hover: rgba(98,136,217,0.6);
+$house-unit-bg-dark: #6288D9;
+$house-unit-bg-dark-active: #8CABE6;
+$content-bg-dark: #BAD7FB;
+$th-bg-dark: rgba(71,102,178,0.2);
+$picker-bg-dark: #fff;
+$color-bg-dark: #fff;
+$color-bg-line-dark: #BCD0F2;
+$color-bg-time-dark: rgba(12,30,94,0.23); //年月日切换背景
+$color-bg-radio-dark: #5D86FF;
+$color-bg-pic-dark: #E6E6E6;
+$color-bg-map-alarm-dark: rgba(98,136,217,0.9);
+$color-bg-map-excircle-dark: #f6f917;
+$color-bg-input-disable-dark: #ccc;
+$color-bg-znv-panel-dark2: rgba(93,126,200,0.5); //一人一档  一车一档
+$color-bg-znv-panel-content-dark2: rgba(45,48,68,0.4);
+$color-bg-znv-time-inrange-dark: #f2f6fc;
+$color-bg-dropdown-dark: linear-gradient(180deg,rgba(98,136,217,0.9),rgba(48,72,140,0.9));
+
+
+/*背景深色主题*/
+$color-bg-znv-panel-deep: linear-gradient(0deg,rgba(5,5,14,0.8) 0%,rgba(29,65,117,0.8) 100%);
+
+
+// 背景 alarm
+$color-bg-alarm-common: #2C87D7;
+$color-bg-alarm-important: #F8A52B;
+
+// border
+$color-border-msg: rgba(47, 184, 253, 1); // 提示 通知 alert等边框颜色
+$color-border-1: #fff;
+$color-border-2: #296CC2; // 模块边框
+$color-border-input: #32aaff; // input边框
+$color-border-input-hover: #00F8FF; // input边框
+$color-border-select: #18cad1; // select边框
+$color-border-select-hover: #32AAFF; // select边框
+$color-border-3: #00EAFF; // 弹出框边框颜色
+$color-border-4: #296CC2; // 列表条目颜色
+$color-border-5: rgba(255, 255, 255, 0.8); // 弹出框边框颜色
+$color-border-dark-blue: #6288D9;
+$color-border-select: #32AAFF; // input边框颜色
+$color-border-table: rgba(41,109,194,0.2); // 表格边框颜色
+$color-border-table2: #296DC2;
+$color-border-time-dark: #5578DD;
+/*border默认主题*/
+$color-border-znv-panel: #296CC2;
+$color-border-znv-panel-tree: #296CC2;
+/*border黑色主题*/
+$color-border-znv-panel-dark: #4766B2;
+$color-border-znv-border-dark: #E3E3E3;
+$color-border-znv-dialog-border-dark: #bbb;
+
+
+// font 字体
+$color-font-0: #000;
+$color-font-1: #fff;
+$color-font-2: #03fffc;
+$color-font-1-dark: #333;
+$color-font-2-dark: #BBD0F2;
+$color-font-9-dark: #999;
+$color-font-6-dark: #666;
+$color-font-c-dark: #ccc;
+$color-font-1-active: #fff;
+$color-font-blue: #6288D9;
+$color-font-blue2: #5878C7;
+$color-font-blue3: #1E2E67;
+$color-font-blue4: #296CC2;
+$color-font-blue5: #1A4099;
+$color-font-th2: #30488B;
+$color-font-green: #66D6CA;
+$color-font-pager: #00FFF8;
+$color-font-pager2: #1A4099;
+$color-font-green2: #90CFFF;
+$color-font-th: RGBA(158, 210, 255, 1); //table 表头
+$color-font-white5: rgba(255,255,255,0.5);
+$color-font-white8: rgba(255,255,255,0.8);
+$color-font-yellow: #FFD200;
+// font status
+$color-font-status-1: #D63434;
+$color-font-status-2: #F4EC1D;
+$color-font-status-3: #48B4FF;
+$color-font-status-4: #48FF4C;
+
+$color-font-status-1-dark: #FF0000;
+$color-font-status-2-dark: #1AC606;
+$color-font-status-3-dark: #5878C7;
+$color-font-status-4-dark: #F6A21C;
+
+// icon 图标
+$color-icon-close: #fff;
+$color-icon-success: #51db67;
+$color-font-success: #4DD0B2;
+$color-icon-warning: #FFC45D;
+$color-font-warning: #E7A736;
+$color-icon-info: #5DADFF;
+$color-font-info: #45CDE1;
+$color-icon-error: #FF5D5D;
+$color-font-error: #E14545;
+
+// button
+$color-btn-cancle: none;
+$color-btn-cancle-hover: none;
+$color-btnfont-cancle: none;
+$color-btnfont-cancle-hover: #3D96D6;
+$color-btnfont-cancle--dark-hover: #6288D9;
+$color-btn-primary: linear-gradient(180deg,rgba(81,186,255,1),rgba(0,139,255,1),rgba(1,83,179,1));
+$color-btn-primary-hover: linear-gradient(180deg, rgba(107, 187, 253, .5), rgba(0, 138, 252, 1), rgba(0, 95, 176, .5));
+$color-bg-select-btn: linear-gradient(180deg, rgba(94, 173, 255, 1), rgba(18, 117, 255, 1), rgba(12, 76, 163, 1)); // select右侧btn
+$color-bg-select-btn-dark: #F2F2F2;
+$color-btn-primary-dark: linear-gradient(180deg,rgba(140,171,230,1),rgba(71,102,178,1));
+$color-btn-primary-hover-dark: linear-gradient(180deg,rgba(140,171,230,0.5),rgba(71,102,178,0.5));
+
+// 阴影 box-shadow
+$box-shadow-1: 3px 3px 32px 0 RGBA(0, 174, 253, 0.31) inset; //alert message等
+$box-shadow-area: 0 0 0 0 RGBA(30, 158, 255, 0.31) inset; //模块等
+$box-shadow-input: 3px 3px 32px 0 RGBA(30, 158, 255, 0.31) inset; //input等
+$box-shadow-selcet: 3px 3px 32px 0 RGBA(30, 158, 255, 0.31) inset; //select等
+$box-shadow-selcet-dark: 0 2px 12px 0 rgba(0,0,0,0.1); //select等
+$box-shadow-selcet-hover: 3px 3px 32px 0 RGBA(30, 158, 255, 0.31) inset; //select hover等
+$box-shadow-panel: 0 0 32px rgba(0, 174, 253, .31) inset;//panel
+$box-shadow-input-dark: 3px 3px 32px 0 transparent inset;
+$box-shadow-area-dark: 3px 3px 32px 0 transparent inset;
+$box-shadow-panel-dark: 0 0 32px transparent inset;
+$box-shadow-dropdown-dark: 0px 0px 8px 0px rgba(0, 0, 0, 0.35);

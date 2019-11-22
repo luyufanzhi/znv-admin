@@ -1,0 +1,359 @@
+@import "color";
+//ztree
+.ztree {
+  * {
+    font-size: 1.6rem;
+  }
+  li {
+    line-height: 1.6rem;
+    a {
+      color: #fff;
+    }
+    a.curSelectedNode {
+      height: 1.6rem;
+      background-color: #6a90ec;
+      border: none;
+    }
+    & a span.button.add, & span.button.edit, & span.button.remove {
+      vertical-align: sub;
+    }
+  }
+  .tree-icon {
+    color: #fff;
+    font-size: .7rem;
+    padding-left: .5rem;
+    vertical-align: middle;
+  }
+}
+
+.ztree01 li span.button {
+  display: inline-block;
+  vertical-align: middle;
+  border: 0 none;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  margin-left: 15px;
+  width: 28px;
+  height: 28px;
+}
+
+.ztree01 li span.button.chk {
+  width: 13px;
+  height: 13px;
+  margin: 0 3px 0 0;
+  cursor: auto;
+  margin-top: 7px;
+}
+
+.ztree01 li span.button.chk.checkbox_false_full {
+  background-position: 0 0
+}
+
+.ztree01 li span.button.chk.checkbox_false_full_focus {
+  background-position: 0 -14px
+}
+
+.ztree01 li span.button.chk.checkbox_false_part {
+  background-position: 0 -28px
+}
+
+.ztree01 li span.button.chk.checkbox_false_part_focus {
+  background-position: 0 -42px
+}
+
+.ztree01 li span.button.chk.checkbox_false_disable {
+  background-position: 0 -56px
+}
+
+.ztree01 li span.button.chk.checkbox_true_full {
+  background-position: -14px 0
+}
+
+.ztree01 li span.button.chk.checkbox_true_full_focus {
+  background-position: -14px -14px
+}
+
+.ztree01 li span.button.chk.checkbox_true_part {
+  background-position: -14px -28px
+}
+
+.ztree01 li span.button.chk.checkbox_true_part_focus {
+  background-position: -14px -42px
+}
+
+.ztree01 li span.button.chk.checkbox_true_disable {
+  background-position: -14px -56px
+}
+
+.ztree01 li span.button.chk.radio_false_full {
+  background-position: -28px 0
+}
+
+.ztree01 li span.button.chk.radio_false_full_focus {
+  background-position: -28px -14px
+}
+
+.ztree01 li span.button.chk.radio_false_part {
+  background-position: -28px -28px
+}
+
+.ztree01 li span.button.chk.radio_false_part_focus {
+  background-position: -28px -42px
+}
+
+.ztree01 li span.button.chk.radio_false_disable {
+  background-position: -28px -56px
+}
+
+.ztree01 li span.button.chk.radio_true_full {
+  background-position: -42px 0
+}
+
+.ztree01 li span.button.chk.radio_true_full_focus {
+  background-position: -42px -14px
+}
+
+.ztree01 li span.button.chk.radio_true_part {
+  background-position: -42px -28px
+}
+
+.ztree01 li span.button.chk.radio_true_part_focus {
+  background-position: -42px -42px
+}
+
+.ztree01 li span.button.chk.radio_true_disable {
+  background-position: -42px -56px
+}
+
+.ztree01 li span.button.switch {
+  width: 16px;
+  height: 16px;
+  margin-top: 0;
+}
+
+.ztree li span.button.noline_open {
+  background: url("../../assets/public/ztree/noline_open.png") 0 0;
+}
+
+.ztree li span.button.noline_close {
+  background: url("../../assets/public/ztree/noline_close.png") 0 0;
+}
+
+.ztree01 li span.button.edit {
+  margin-right: 2px;
+  background-position: -110px -48px;
+  /*vertical-align: top;*/
+  vertical-align: middle
+}
+
+.ztree01 li span.button.remove {
+  margin-right: 2px;
+  background-position: -110px -64px;
+  /*vertical-align: top;*/
+  vertical-align: middle
+}
+
+.ztree01 li span.button.ico_loading {
+  margin-right: 2px;
+  /*background: url(./img/loading.gif) no-repeat scroll 0 0 transparent;
+vertical-align: top;*/
+  vertical-align: middle
+}
+
+ul.ztree01.ztree01DragUL {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  background-color: #cfcfcf;
+  border: 1px #00B83F dotted;
+  opacity: 0.8;
+  filter: alpha(opacity=80)
+}
+
+.ztree01Mask {
+  z-index: 10000;
+  background-color: #cfcfcf;
+  opacity: 0.0;
+  filter: alpha(opacity=0);
+  position: absolute
+}
+
+/* 搜索高亮 */
+.nodehighlight {
+  color: #3598dc;
+  font-weight: bold;
+}
+
+.ztree01 li ul {
+  margin: 0;
+  padding: 0
+}
+
+.ztree01 li {
+  line-height: 30px;
+}
+
+.ztree01 li a {
+  width: 100%;
+  height: 50px;
+  padding-top: 0px;
+  padding-left: 37px;
+}
+
+.ztree01 .node_name {
+  margin-left: 10px;
+}
+
+.ztree01 li a:hover {
+  text-decoration: none;
+  @include znv_bg(rgba(41,162,255,0.4),rgba(98,136,217,0.4));
+}
+
+.ztree01.showIcon li a span.button.switch {
+  visibility: visible
+}
+
+.ztree01 li a.curSelectedNode {
+  @include znv_bg(#29A2FF,#6288D9);
+  border: 0;
+  height: 50px;
+  opacity: 1;
+}
+
+.ztree01 li span {
+  line-height: 50px;
+}
+
+.ztree01 li span.button.chk {
+  display: inline-block;
+  margin-top: -1px;
+}
+
+.ztree01 li {
+  .button.znvtree_shequ_ico_docu, .button.znvtree_shequ_ico_close, .button.znvtree_shequ_ico_open {
+    /*@include znv_bg(url(../../assets/public/ztree/shequ.png) 0 0 no-repeat,url(../../assets/public/ztree/shequ_dark.png) 0 0 no-repeat)*/
+    background: url(../../assets/public/ztree/shequ_dark.png) 0 0 no-repeat;
+  }
+  .button.znvtree_lou_ico_docu, .button.znvtree_lou_ico_open, .button.znvtree_lou_ico_close {
+    background: url(../../assets/public/ztree/lou.png) 0 0 no-repeat;
+  }
+  .button.znvtree_paichusuo_ico_docu, .button.znvtree_paichusuo_ico_open, .button.znvtree_paichusuo_ico_close {
+    /*@include znv_bg(url(../../assets/public/ztree/jiedao.png) 0 0 no-repeat,url(../../assets/public/ztree/jiedao_dark.png) 0 0 no-repeat)*/
+    background: url(../../assets/public/ztree/jiedao_dark.png) 0 0 no-repeat;
+  }
+  .button.znvtree_xiaoqu_ico_docu, .button.znvtree_xiaoqu_ico_close, .button.znvtree_xiaoqu_ico_open {
+    /*@include znv_bg(url(../../assets/public/ztree/xiaoqu.png) 0 0 no-repeat,url(../../assets/public/ztree/xiaoqu_dark.png) 0 0 no-repeat)*/
+    background: url(../../assets/public/ztree/xiaoqu_dark.png) 0 0 no-repeat;
+  }
+
+  .button.znvtreecom_level1_ico_docu, .button.znvtreecom_level1_ico_close, .button.znvtreecom_level1_ico_open {
+    background: url(../../assets/public/ztree/icon_peo3.png) 0 0 no-repeat;
+    background-size: cover;
+  }
+  .button.znvtreecom_level2_ico_docu, .button.znvtreecom_level2_ico_open, .button.znvtreecom_level2_ico_close {
+    background: url(../../assets/public/ztree/icon_peo2.png) 0 0 no-repeat;
+    background-size: cover;
+  }
+  .button.znvtreecom_level3_ico_docu, .button.znvtreecom_level3_ico_open, .button.znvtreecom_level3_ico_close {
+    background: url(../../assets/public/ztree/icon_peo.png) 0 0 no-repeat;
+    background-size: cover;
+  }
+}
+
+.v-modal {
+  display: none;
+}
+
+/*滚动条插件*/
+.optiscroll-vtrack, .optiscroll-htrack {
+  @include znv_bg($color-bg-scrollbar,$color-font-white5);
+}
+
+// 对话框分格修改
+.znv-dialog-style01 {
+  text-aling: left;
+  padding: 0 25px;
+  .el-dialog__title {
+    color: #fff;
+    font-size: 22px;
+  }
+  .el-dialog__header {
+    border-bottom: 1px solid #52fefb;
+    padding: 0 20px;
+    height: 60px;
+    line-height: 60px;
+  }
+  .el-dialog__headerbtn {
+    right: 30px;
+    .el-dialog__close {
+      color: #fff;
+      font-size: 22px;
+    }
+    .el-dialog__close:hover {
+      color: #52fefb;
+    }
+  }
+  .el-dialog__body {
+    padding: 10px;
+  }
+}
+
+.znv-btn01.el-button--primary {
+  height: 48px;
+  background: linear-gradient(90deg, #4f86c4, #68a7ed);
+  border: 0;
+  font-size: 20px;
+}
+
+.znv-btn01.el-button--primary:hover {
+  //opacity:.7;
+}
+
+.znv-form01 {
+  font-size: 16px;
+  text-align: left;
+  .el-form-item__label {
+    color: #fff;
+  }
+  .el-form-item {
+    margin-bottom: 12px;
+  }
+}
+
+.znv-dialog-style02 {
+  text-aling: left;
+  padding: 0 25px;
+  background: rgba(60, 62, 74, 0.8);
+  margin-top: 330px !important;
+  margin-left: 212px;
+  .el-dialog__title {
+    color: #fff;
+    font-size: 16px;
+  }
+  .el-dialog__header {
+    /*border-bottom: 1px solid #52fefb;*/
+    padding: 0px;
+    height: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+  .el-dialog__headerbtn {
+    right: 30px;
+    .el-dialog__close {
+      color: #fff;
+      font-size: 22px;
+    }
+    .el-dialog__close:hover {
+      color: #52fefb;
+    }
+  }
+  .el-dialog__body {
+    padding: 0px;
+  }
+}

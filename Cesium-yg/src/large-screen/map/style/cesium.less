@@ -1,0 +1,149 @@
+@import "~@less/mixins.less";
+
+/* 底部文本信息隐藏 */
+/deep/ .cesium-viewer-bottom {
+    display: none;
+}
+
+@bgc: #093d64;
+@bgc2: #094570;
+@border: 1px solid #0092fe;
+@height-compass: 45px;
+@height-zoom: 50px;
+@grap : 10px;
+@bottom: 26px;
+@left: 13px;
+
+/* 地图控件 */
+/deep/ .cesium-viewer-navigationContainer {
+    // display: none;
+    position: absolute;
+    left: @left;
+    bottom: 0;
+    right: auto;
+    top: auto;
+    height: @height-compass + @height-zoom + @grap + @bottom;
+    width: 45px;
+}
+
+/deep/ .sm-zoom {
+    width: 25px;
+    height: @height-zoom;
+    // background-color: @bgc;
+    visibility: initial;
+    background-image:none;
+    border-radius: 2px;
+    left: 0;
+    right: 0;
+    top: @height-compass + 10px;
+    margin: 0 auto;
+}
+/deep/ .sm-zoombar {
+    display: none;
+}
+/deep/ .sm-zoomin {
+    width: 25px;
+    height: 24px;
+    border: @border;
+    background-color: @bgc;
+    background-image: url('../images/navigation/ico_enlarge_normal.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/deep/ .sm-zoomin:hover {
+    background-image: url('../images/navigation/ico_enlarge_hover.png');
+}
+/deep/ .sm-zoomout {
+    width: 25px;
+    height: 24px;
+    border: @border;
+    background-color: @bgc;
+    background-image:  url('../images/navigation/ico_narrow_normal.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/deep/ .sm-zoomout:hover {
+    background-image: url('../images/navigation/ico_narrow_hover.png');
+}
+/deep/ .sm-zoom::after {
+    // content: "";
+    position: absolute;
+    width: 25px;
+    height: 1px;
+    background-color: #ccc;
+    top: 100%;
+    left: 2px;
+    z-index: 999;
+}
+/deep/ .sm-compass {
+    // right: 45px;
+    // top: 48px;
+    left: 0;
+    top: 0;
+    width: @height-compass;
+    height: @height-compass;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: @bgc;
+    border: 1px solid rgba(47,184,255,1);
+    box-shadow: 0px 0px 32px 0px rgba(0,174,255,0.31);
+}
+/deep/ .sm-compass-tilt {
+    width: 60px;
+    height: 60px;
+    background-image: none;
+}
+/deep/ .sm-compass-outer-ring {
+    background-image: none;
+    display: none;
+}
+/deep/ .arrows_e_active {
+    width: 15px;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%) translateX(-100%);
+    visibility: inherit;
+    background: url('../images/navigation/rotate_right_normal.png') no-repeat center;
+}
+/deep/ .arrows_e_active:active {
+    background: url('../images/navigation/rotate_right_hover.png') no-repeat center;
+}
+/deep/ .arrows_n_active {
+    width: 10px;
+    height: 16px;
+    top: 6.5px;
+    left: 50%;
+    visibility: inherit;
+    background: url('../images/navigation/up.png') no-repeat;
+    transform: translateX(-50%);
+}
+/deep/ .arrows_n_active:active {
+    background: url(../images/navigation/up.png) no-repeat;
+    transform: translateX(-50%);
+}
+/deep/ .arrows_s_active {
+    width: 10px;
+    height: 16px;
+    // top: 100%;
+    top: auto;
+    bottom: 6.5px;
+    left: 50%;
+    visibility: inherit;
+    transform: translateX(-50%);
+    background: url('../images/navigation/down.png') no-repeat;
+}
+/deep/ .arrows_s_active:active {
+    background: url(../images/navigation/down.png) no-repeat;
+    transform: translateX(-50%);
+}
+/deep/ .arrows_w_active {
+    width: 15px;
+    top: 50%;
+    left: 0px;
+    visibility: inherit;
+    transform: translateY(-50%);
+    background: url('../images/navigation/rotate_left_normal.png') no-repeat center;
+}
+/deep/ .arrows_w_active:active {
+    background: url('../images/navigation/rotate_left_hover.png') no-repeat center;
+}

@@ -1,0 +1,233 @@
+/*
+    辅助类
+*/
+
+@import "~@less/mixins.less";
+@import "~@less/variable.less";
+
+.hide{
+    visibility: hidden;
+    display: none\9 !important;
+    filter: 'alpha(opacity = 0)';
+    opacity: 0;
+}
+
+.mask {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: @zIndex-mask;
+    background-color: transparent;
+}
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+
+
+.pr{
+    position: relative;
+}
+.por{
+    position: absolute !important;
+    top: 0;
+    right: 0;
+}
+
+.pol{
+    position: absolute;
+    top: 0;
+    left : 0;
+}
+.pob{
+    position: absolute;
+    bottom : 0;
+    left : 0;
+}
+.pobr{
+    position: absolute;
+    bottom : 0;
+    right : 0;
+}
+.pfb{
+    position: fixed;
+    bottom : 0;
+    left : 0;
+}
+
+
+.ilt{
+    display: inline-block;
+    vertical-align: top !important;
+}
+
+.ilb{
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.ilm{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.clear{
+    clear:both;
+}
+
+.baseline{
+    vertical-align: baseline !important;
+}
+
+
+.bsb {
+    box-sizing: border-box;
+}
+
+.fb{
+    font-weight: bold;
+}
+
+.mt20{
+    margin-top: .px2vh(20)[@result];
+}
+
+
+.mt10{
+    margin-top: .px2vh(10)[@result];
+}
+
+.mt15{
+    margin-top: .px2vh(15)[@result];
+}
+
+.mt30{
+    margin-top: .px2vh(30)[@result];
+}
+
+.mt40{
+    margin-top: .px2vh(40)[@result];
+}
+
+.center{
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
+/* zp 开始 */
+.none {
+    display: none;
+    .setWH(0);
+}
+
+/* 清除浮动 */
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+    .setWH(0);
+}
+.clearfix:after {
+    clear: both
+}
+
+/* 禁止用户点击 */
+.unselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.znv-wrap {
+    width: 100%;
+    height: 100%;
+}
+
+/* 超出文字省略号 */
+.znv-ellipsis {
+    .setEllipsis();
+}
+
+ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* 根字体大小 */
+html {
+    font-size: 10px;
+}
+/* zp 结束 */
+
+/* 文本, 一些信息框使用 */
+@height: .px2vh( 35 )[ @result ];
+
+.znv-info {
+    .row {
+        font-size: .px2vh( 16 )[ @result ];
+        margin-bottom: .px2vh( 14 )[ @result ];
+        padding-left: .px2vh( 26 )[ @result ];
+        color: #72B2FF;
+
+        label {
+            display: inline-block;
+            color: #72B2FF;
+            float: left;
+            width: .px2vw( 80 )[ @result ];
+            text-align: justify;
+            text-align-last: justify;
+            line-height: @height;
+            height: @height;
+        }
+        span {
+            color: #72B2FF;
+            float: left;
+            line-height: @height;
+        }
+        .txt {
+            color: #fff;
+            margin-left: .px2vw( 100 )[ @result ];
+            text-align: left;
+            height: @height;
+            line-height: @height;
+        }
+    }
+}
+
+.cp{
+    cursor: pointer;
+}
+
+@h32: .px2vh(32)[@result];
+@h16: .px2vh(16)[@result];
+
+.bluebtn{
+    height:@h32;
+    line-height:@h32;
+    background:@btnGradient;color:#fff;text-align:center;
+    border:0px none;font-size:@h16;
+    background: linear-gradient(180deg,rgba(94,173,255,1),rgba(18,117,255,1),rgba(12,76,163,1));
+}
+
+.hr20 {
+    height: @w20;clear:both;
+}
+.hr30 {
+    height: @w30;clear:both;
+}

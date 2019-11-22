@@ -1,0 +1,167 @@
+// @sidebar--background-color-znv: linear-gradient(0deg,rgba(5,26,57,1) 0%,rgba(4,20,53,1) 48%,rgba(3,18,49,1) 100%);
+@sidebar--background-color-znv: linear-gradient(0deg,rgba(5,26,57,1) 0%,rgba(4,20,53,1) 48%,rgba(3,18,49,1) 100%);
+@txt-color: #CFDFFF;
+@navbar--background-color-znv: linear-gradient(90deg,rgba(5,26,57,1) 0%,rgba(4,20,53,1) 48%,rgba(3,18,49,1) 100%);
+@content-background-color: rgba(1,10,28,1);
+@tab-bar-item-background-color: #467FFF;
+@nav-height: 60px;
+
+/* 侧边栏 开始 */
+.site-sidebar--znv,
+.site-sidebar--znv-popper {
+    background: @sidebar--background-color-znv;
+
+    .site-sidebar__inner {
+        background-image: url('/static/img/home/silderBar_bg.png');
+        // .setBg();
+        background-size: contain;
+        background-position: left bottom;
+        background-repeat: no-repeat;
+    }
+
+    .site-sidebar__menu.el-menu,
+    > .el-menu--popup {
+        // background: @sidebar--background-color-znv;
+        background-color: transparent;
+        color: @txt-color;
+        font-size: 20px;
+        font-family:MicrosoftYaHei;
+        font-weight:400;
+
+        .el-menu-item,
+        .el-submenu > .el-submenu__title {
+            // height: 100px;
+            // line-height: 100px;
+            color: #CFDFFF;
+            border-bottom: 1px solid rgba( 255, 255, 255, .1 );
+
+            &:focus,
+            &:hover {
+                color: #00FFFF;
+                background-color: rgba(0,49,157,1);
+            }
+        }
+
+        .el-menu,
+        .el-submenu.is-opened {
+            background-color: transparent;
+            // background-color: mix(#000, $sidebar--background-color-dark, 15%);
+        }
+        .el-menu-item.is-active,
+        .el-submenu.is-active > .el-submenu__title {
+            // color: mix(#fff, $sidebar--color-text-dark, 80%);
+        }
+    }
+}
+/* 侧边栏 结束 */
+
+/* 导航栏 开始 */
+.site-navbar--znv.site-navbar {
+    @height: @nav-height;
+    height: @height;
+
+    .site-navbar__header {
+        height: @height!important;
+    }
+
+    .site-navbar__brand {
+        background-image: url("/static/img/home/logo.png");
+        background-repeat: no-repeat;
+        background-size: 40px 40px;
+        background-position: 10px 10px;
+        padding-left: 40px;
+        height: @height;
+    }
+
+    .site-navbar__menu {
+        .el-menu-item {
+            height: @height!important;
+            line-height: @height;
+
+            &:focus,
+            &:hover {
+                .el-dropdown-link {
+                    color: #00FFFF!important;
+                }
+            }
+        }
+    }
+    .site-navbar__switch {
+        width: @height!important;
+    }
+
+    &.site-navbar {
+        background: @navbar--background-color-znv;
+        color: @txt-color;
+    }
+    .site-navbar__body {
+        background: @navbar--background-color-znv;
+        height: @height;
+    }
+    .menubar .menuitem {
+        color: @txt-color;
+    }
+
+    .el-menu-item {
+        color: @txt-color;
+    }
+
+    .el-menu-item:focus,
+    .el-menu-item:hover {
+        color: #00FFFF!important;
+        background-color: rgba(0,49,157,1)!important;
+    }
+}
+/* 导航栏 结束 */
+
+/* content 开始 */
+.site-content--znv {
+    padding-top: @nav-height;
+    background-color: @content-background-color;
+
+    .site-content--tabs {
+        padding-top: 55px - @nav-height + 50px;
+    }
+}
+/* content 结束 */
+
+/* 标签栏 开始 */
+.site-content--znv {
+    @top: 7px!important;
+
+    .el-tabs.el-tabs--top {
+
+        .el-tabs__header {
+            background-color: @content-background-color!important;
+            top: @nav-height!important;
+
+            .el-tabs__nav-scroll {
+                box-sizing: border-box!important;
+                padding-top: @top!important;
+                // padding-bottom: 5px;
+            }
+
+            .el-tabs__item {
+                background-color: @tab-bar-item-background-color!important;
+                color: @txt-color!important;
+                padding-left: 10px!important;
+                padding-right: 10px!important;
+                margin-right: 10px!important;
+                height: 30px!important;
+                line-height: 30px!important;
+            }
+        }
+
+        .el-dropdown.site-tabs__tools {
+            height: 30px!important;
+            line-height: 30px!important;
+            margin-top: @top!important;
+            background-color: @content-background-color!important;
+            color: @txt-color!important;
+        }
+    }
+}
+.site-tabs__tools {
+    height: 30px!important;
+}
+/* 标签栏 结束 */

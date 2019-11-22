@@ -1,0 +1,255 @@
+@charset "utf-8";
+@import "color-theme";
+
+/*背景*/
+@mixin znv_bg($bgColor,$bgColorTheme) {
+  background: $bgColor;
+  [data-theme="dark"] & {
+    background: $bgColorTheme;
+  }
+}
+
+/*背景图片*/
+@mixin znv_bg_img($bgImg,$bgImgTheme) {
+  background: $bgImg no-repeat top left;
+  [data-theme="dark"] & {
+    background: $bgImgTheme no-repeat top left;
+  }
+}
+
+/*背景图片全覆盖*/
+@mixin znv_bg_img_cover($bgImg,$bgImgTheme) {
+  background: $bgImg no-repeat top left;
+  background-size: cover;
+  [data-theme="dark"] & {
+    background: $bgImgTheme no-repeat top left;
+    background-size: cover;
+  }
+}
+
+/*嵌套背景图片*/
+@mixin znv_innerbg_img($bgImg,$bgImgTheme) {
+  background: $bgImg no-repeat top center;
+  [data-theme="dark"] & {
+    background: $bgImgTheme no-repeat top center;
+  }
+}
+
+/*border*/
+@mixin znv_border($border,$borderTheme) {
+  border: $border;
+  [data-theme="dark"] & {
+    border: $borderTheme;
+  }
+}
+@mixin znv_border_image($borderImage,$borderImageTheme) {
+  border-image: $borderImage;
+  [data-theme="dark"] & {
+    border-image: $borderImageTheme;
+  }
+}
+@mixin znv_border_color($borderColor,$borderColorTheme) {
+  border-color: $borderColor;
+  [data-theme="dark"] & {
+    border-color: $borderColorTheme;
+  }
+}
+@mixin znv-border-bottom($width,$color-border-table,$color-border-table-dark) {
+  border-bottom: $width solid $color-border-table;
+  [data-theme="dark"] & {
+    border-bottom: $width solid $color-border-table-dark;
+  }
+}
+@mixin znv-border-bottom2($color-border-table,$color-border-table-dark) {
+  border-bottom: $color-border-table;
+  [data-theme="dark"] & {
+    border-bottom:$color-border-table-dark;
+  }
+}
+@mixin znv-border-top($width,$color-border-table,$color-border-table-dark) {
+  border-top: $width solid $color-border-table;
+  [data-theme="dark"] & {
+    border-top: $width solid $color-border-table-dark;
+  }
+}
+@mixin znv-border-top2($color-border-table,$color-border-table-dark) {
+  border-top: $color-border-table;
+  [data-theme="dark"] & {
+    border-top: $color-border-table-dark;
+  }
+}
+@mixin znv-border-left($width,$color-border-table,$color-border-table-dark) {
+  border-left: $width solid $color-border-table;
+  [data-theme="dark"] & {
+    border-left: $width solid $color-border-table-dark;
+  }
+}
+@mixin znv-border-right($width,$color-border-table,$color-border-table-dark) {
+  border-right: $width solid $color-border-table;
+  [data-theme="dark"] & {
+    border-right: $width solid $color-border-table-dark;
+  }
+}
+/*字体颜色*/
+@mixin znv-font-color($color,$colorTheme) {
+  color: $color;
+  [data-theme="dark"] & {
+    color: $colorTheme;
+  }
+}
+@mixin znv-font-size($size,$sizeTheme) {
+  size: $size;
+  [data-theme="dark"] & {
+    size: $sizeTheme;
+  }
+}
+@mixin znv-font-size2($size,$sizeTheme) {
+  font-size: $size;
+  [data-theme="dark"] & {
+    font-size: $sizeTheme;
+  }
+}
+/*box-shadow*/
+@mixin znv-box-shadow($shadow,$shadowTheme) {
+  -moz-box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+  box-shadow: $shadow;
+  [data-theme="dark"] & {
+    -moz-box-shadow: $shadowTheme;
+    -webkit-box-shadow: $shadowTheme;
+    box-shadow: $shadowTheme;
+  }
+}
+
+@mixin znv-tab-triangle-bg($color-bg-znv-tab,$color-bg-znv-tab-dark) {
+  border-color: transparent transparent $color-bg-znv-tab;
+  [data-theme="dark"] & {
+    border-color: transparent transparent $color-bg-znv-tab-dark;
+  }
+}
+
+@mixin znv-tab-triangle-bg-active($color-bg-znv-triangle-active,$color-bg-znv-triangle-active-dark) {
+  background: $color-bg-znv-triangle-active;
+  [data-theme="dark"] & {
+    background: $color-bg-znv-triangle-active-dark;
+  }
+}
+
+@mixin znv-border-radius($borderRadius,$borderRadiusTheme) {
+  border-radius: $borderRadius;
+  [data-theme="dark"] & {
+    border-radius:$borderRadiusTheme;
+  }
+}
+
+@mixin znv-display($display,$displayTheme) {
+  display: $display;
+  [data-theme="dark"] & {
+    display:$displayTheme;
+  }
+}
+
+@mixin znv-visible($visible,$visibleTheme) {
+  visibility: $visible;
+  [data-theme="dark"] & {
+    visibility:$visibleTheme;
+  }
+}
+@mixin znv-margin-top($marginTop,$marginTopTheme) {
+  margin-top: $marginTop;
+  [data-theme="dark"] & {
+    margin-top:$marginTopTheme;
+  }
+}
+@mixin znv-margin-left($marginTop,$marginTopTheme) {
+  margin-left: $marginTop;
+  [data-theme="dark"] & {
+    margin-left:$marginTopTheme;
+  }
+}
+@mixin znv-margin-right($marginRight,$marginRightTheme) {
+  margin-right: $marginRight;
+  [data-theme="dark"] & {
+    margin-right:$marginRightTheme;
+  }
+}
+@mixin znv-top($top,$topTheme) {
+  top: $top;
+  [data-theme="dark"] & {
+    top:$topTheme;
+  }
+}
+@mixin znv-bottom($bottom,$bottomTheme) {
+  bottom: $bottom;
+  [data-theme="dark"] & {
+    bottom:$bottomTheme;
+  }
+}
+@mixin znv-left($left,$leftTheme) {
+  left: $left;
+  [data-theme="dark"] & {
+    left:$leftTheme;
+  }
+}
+
+@mixin znv-width($width,$widthTheme) {
+  width: $width;
+  [data-theme="dark"] & {
+    width:$widthTheme;
+  }
+}
+
+@mixin znv-height($height,$heightTheme) {
+  height: $height;
+  [data-theme="dark"] & {
+    height:$heightTheme;
+  }
+}
+@mixin znv-scrollbar(){
+  /*三角箭头的颜色*/
+  scrollbar-arrow-color: #fff;
+  /*滚动条滑块按钮的颜色*/
+  scrollbar-face-color: rgba(0, 203, 210, 1);
+  /*滚动条整体颜色*/
+  scrollbar-highlight-color: #333;
+  /*滚动条阴影*/
+  scrollbar-shadow-color: #ccc;
+  /*滚动条轨道颜色*/
+  scrollbar-track-color: rgba(41, 85, 192, 0.9);
+  [data-theme="dark"] & {
+    scrollbar-arrow-color: #bbb;
+    scrollbar-face-color: #e4e7ed;
+    scrollbar-highlight-color: #F2F2F2;
+    scrollbar-shadow-color: #ccc;
+    scrollbar-track-color: #f5f7fa;
+  }
+}
+
+@mixin znv-transform($transform, $transformTheme) {
+  transform: $transform;
+  [data-theme="dark"] & {
+    transform: $transformTheme;
+  }
+}
+
+@mixin znv-transform-origin($transformOrigin, $transformOriginTheme) {
+  transform-origin: $transformOrigin;
+  [data-theme="dark"] & {
+    transform-origin: $transformOriginTheme;
+  }
+}
+
+@mixin znv-tansform2($transform, $transformTheme){
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  -o-transform: $transform;
+  transform: $transform;
+  [data-theme="dark"] & {
+    -webkit-transform: $transformTheme;
+    -moz-transform: $transformTheme;
+    -ms-transform: $transformTheme;
+    -o-transform: $transformTheme;
+    transform: $transformTheme;
+  }
+}

@@ -1,0 +1,12 @@
+//fullNav.js
+export const MODE_CURRENT_INDEX = "MODE_CURRENT_INDEX";
+export const NAV_LIST = "NAV_LIST";
+export const TAB_LIST = "TAB_LIST";
+export const NAV_LIST_CURRENT_INDEX = "NAV_LIST_CURRENT_INDEX";
+export const TAB_LIST_CURRENT_INDEX = "TAB_LIST_CURRENT_INDEX";
+export const THIRD_CURRENT_INDEX = "THIRD_CURRENT_INDEX"
+export const MANAGE_ROUTES = "MANAGE_ROUTES"
+
+
+
+
