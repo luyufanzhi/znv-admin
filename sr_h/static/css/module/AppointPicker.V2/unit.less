@@ -1,0 +1,20 @@
+
+.setUnit( @unit, @content ) {
+    .@{unit} .picker-item.picker-selected::after {
+        content: @content;
+    }
+}
+
+.appoint-picker {
+	.mt-picker {
+
+        // @param-1: 传入的字符串; @param-2: 需要显示的单位;
+        .setUnit( year, "年" );
+        .setUnit( month, "月" );
+        .setUnit( hour, "时" );
+        .setUnit( second, "秒");
+        .setUnit( minutes, "分");
+        .setUnit( stalls, "档");
+        .setUnit( gram, "克");
+	}
+}

@@ -1,0 +1,1081 @@
+{
+	"prodId": "104Y",
+	"deviceModel": "KL-50G1",
+	"deviceName": "九阳空气炸锅KL-50G1",
+	"deviceNameEn": "Air Fryer",
+	"deviceTypeId": "063",
+	"deviceTypeName": "空气炸锅",
+	"deviceTypeNameEn": "Breaking filtration blender",
+	"manufacturerId": "020",
+	"manufacturerName": "九阳",
+	"manufacturerNameEn": "Joyoung",
+	"power": 20,
+	"protocolType": "WiFi",
+	"uiType": "H5",
+	"uriInfo": {
+		"uri":"104Y/h5_001/index.html"
+	},
+	"services": [{
+		"characteristics": [{
+			"characteristicName": "status",
+			"characteristicType": "array",
+			"enumList": [{
+				"enumVal": 0,
+				"descCh": "待机"
+			},
+			{
+				"enumVal": 1,
+				"descCh": "工作中"
+			},
+			{
+				"enumVal": 2,
+				"descCh": "暂停"
+			},
+			{
+				"enumVal": 3,
+				"descCh": "保温"
+			},
+			{
+				"enumVal": 4,
+				"descCh": "休眠"
+			},
+			{
+				"enumVal": 5,
+				"descCh": "报警"
+			},
+			{
+				"enumVal": 6,
+				"descCh": "预约"
+			},
+			{
+				"enumVal": 7,
+				"descCh": "工作完成"
+			}]
+		},
+		{
+			"characteristicName": "program",
+			"characteristicType": "int",
+			"enumList": [{
+				"descCh": "本地DIY ",
+				"descEn": "",
+				"enumVal": "1",
+				"relatedFields": [{
+					"sid": "beanCooker",
+					"attributes": [{
+						"name": "action",
+						"enable": 1,
+						"min": 0,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				},
+				{
+					"sid": "timeToFinished",
+					"attributes": [{
+						"name": "reserve",
+						"enable": 1,
+						"min": 0,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 1
+					},
+					{
+						"name": "hour",
+						"enable": 1,
+						"min": 3,
+						"max": 11,
+						"step": 1,
+						"defaultVal": 3
+					},
+					{
+						"name": "min",
+						"enable": 1,
+						"min": 0,
+						"max": 59,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				},
+				{
+					"sid": "leftTimeToFinished",
+					"attributes": [{
+						"name": "hour",
+						"enable": 1,
+						"min": 3,
+						"max": 11,
+						"step": 1,
+						"defaultVal": 3
+					},
+					{
+						"name": "min",
+						"enable": 1,
+						"min": 0,
+						"max": 59,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				}]
+			},
+			{
+				"descCh": "五谷豆浆（热）",
+				"descEn": "",
+				"enumVal": "2",
+				"relatedFields": [{
+					"sid": "beanCooker",
+					"attributes": [{
+						"name": "action",
+						"enable": 1,
+						"min": 0,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				},
+				{
+					"sid": "timeToFinished",
+					"attributes": [{
+						"name": "reserve",
+						"enable": 1,
+						"min": 0,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 1
+					},
+					{
+						"name": "hour",
+						"enable": 1,
+						"min": 3,
+						"max": 11,
+						"step": 1,
+						"defaultVal": 3
+					},
+					{
+						"name": "min",
+						"enable": 1,
+						"min": 0,
+						"max": 59,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				},
+				{
+					"sid": "leftTimeToFinished",
+					"attributes": [{
+						"name": "hour",
+						"enable": 1,
+						"min": 3,
+						"max": 11,
+						"step": 1,
+						"defaultVal": 3
+					},
+					{
+						"name": "min",
+						"enable": 1,
+						"min": 0,
+						"max": 59,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				}]
+			},
+			{
+				"descCh": "五谷豆浆（冷）",
+				"descEn": "",
+				"enumVal": "3",
+				"relatedFields": [{
+					"sid": "beanCooker",
+					"attributes": [{
+						"name": "action",
+						"enable": 1,
+						"min": 0,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				},
+				{
+					"sid": "timeToFinished",
+					"attributes": [{
+						"name": "reserve",
+						"enable": 0,
+						"min": 0,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 1
+					},
+					{
+						"name": "hour",
+						"enable": 0,
+						"min": 3,
+						"max": 11,
+						"step": 1,
+						"defaultVal": 3
+					},
+					{
+						"name": "min",
+						"enable": 0,
+						"min": 0,
+						"max": 59,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				},
+				{
+					"sid": "leftTimeToFinished",
+					"attributes": [{
+						"name": "hour",
+						"enable": 1,
+						"min": 3,
+						"max": 11,
+						"step": 1,
+						"defaultVal": 3
+					},
+					{
+						"name": "min",
+						"enable": 1,
+						"min": 0,
+						"max": 59,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				}]
+			},
+			{
+				"descCh": "汤糊（热）",
+				"descEn": "",
+				"enumVal": "4",
+				"relatedFields": [{
+					"sid": "beanCooker",
+					"attributes": [{
+						"name": "action",
+						"enable": 1,
+						"min": 0,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				},
+				{
+					"sid": "timeToFinished",
+					"attributes": [{
+						"name": "reserve",
+						"enable": 1,
+						"min": 0,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 1
+					},
+					{
+						"name": "hour",
+						"enable": 1,
+						"min": 3,
+						"max": 11,
+						"step": 1,
+						"defaultVal": 3
+					},
+					{
+						"name": "min",
+						"enable": 1,
+						"min": 0,
+						"max": 59,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				},
+				{
+					"sid": "leftTimeToFinished",
+					"attributes": [{
+						"name": "hour",
+						"enable": 1,
+						"min": 3,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 3
+					},
+					{
+						"name": "min",
+						"enable": 1,
+						"min": 0,
+						"max": 59,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				}]
+			},
+			{
+				"descCh": "汤糊（冷）",
+				"descEn": "",
+				"enumVal": "5",
+				"relatedFields": [{
+					"sid": "beanCooker",
+					"attributes": [{
+						"name": "action",
+						"enable": 1,
+						"min": 0,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				},
+				{
+					"sid": "timeToFinished",
+					"attributes": [{
+						"name": "reserve",
+						"enable": 0,
+						"min": 0,
+						"max": 11,
+						"step": 1,
+						"defaultVal": 1
+					},
+					{
+						"name": "hour",
+						"enable": 0,
+						"min": 3,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 3
+					},
+					{
+						"name": "min",
+						"enable": 0,
+						"min": 0,
+						"max": 59,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				},
+				{
+					"sid": "leftTimeToFinished",
+					"attributes": [{
+						"name": "hour",
+						"enable": 1,
+						"min": 3,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 3
+					},
+					{
+						"name": "min",
+						"enable": 1,
+						"min": 0,
+						"max": 59,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				}]
+			},
+			{
+				"descCh": "杂粮粥",
+				"descEn": "",
+				"enumVal": "6",
+				"relatedFields": [{
+					"sid": "beanCooker",
+					"attributes": [{
+						"name": "action",
+						"enable": 1,
+						"min": 0,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				},
+				{
+					"sid": "timeToFinished",
+					"attributes": [{
+						"name": "reserve",
+						"enable": 0,
+						"min": 0,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 1
+					},
+					{
+						"name": "hour",
+						"enable": 0,
+						"min": 3,
+						"max": 11,
+						"step": 1,
+						"defaultVal": 3
+					},
+					{
+						"name": "min",
+						"enable": 0,
+						"min": 0,
+						"max": 59,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				},
+				{
+					"sid": "leftTimeToFinished",
+					"attributes": [{
+						"name": "hour",
+						"enable": 1,
+						"min": 3,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 3
+					},
+					{
+						"name": "min",
+						"enable": 1,
+						"min": 0,
+						"max": 59,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				}]
+			},
+			{
+				"descCh": "果汁",
+				"descEn": "",
+				"enumVal": "7",
+				"relatedFields": [{
+					"sid": "beanCooker",
+					"attributes": [{
+						"name": "action",
+						"enable": 1,
+						"min": 0,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				},
+				{
+					"sid": "timeToFinished",
+					"attributes": [{
+						"name": "reserve",
+						"enable": 0,
+						"min": 0,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 1
+					},
+					{
+						"name": "hour",
+						"enable": 0,
+						"min": 3,
+						"max": 11,
+						"step": 1,
+						"defaultVal": 3
+					},
+					{
+						"name": "min",
+						"enable": 0,
+						"min": 0,
+						"max": 59,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				},
+				{
+					"sid": "leftTimeToFinished",
+					"attributes": [{
+						"name": "hour",
+						"enable": 1,
+						"min": 3,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 3
+					},
+					{
+						"name": "min",
+						"enable": 1,
+						"min": 0,
+						"max": 59,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				}]
+			},
+			{
+				"descCh": "酱料",
+				"descEn": "",
+				"enumVal": "8",
+				"relatedFields": [{
+					"sid": "beanCooker",
+					"attributes": [{
+						"name": "action",
+						"enable": 1,
+						"min": 0,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				},
+				{
+					"sid": "timeToFinished",
+					"attributes": [{
+						"name": "reserve",
+						"enable": 0,
+						"min": 0,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 1
+					},
+					{
+						"name": "hour",
+						"enable": 0,
+						"min": 3,
+						"max": 11,
+						"step": 1,
+						"defaultVal": 3
+					},
+					{
+						"name": "min",
+						"enable": 0,
+						"min": 0,
+						"max": 59,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				},
+				{
+					"sid": "leftTimeToFinished",
+					"attributes": [{
+						"name": "hour",
+						"enable": 1,
+						"min": 3,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 3
+					},
+					{
+						"name": "min",
+						"enable": 1,
+						"min": 0,
+						"max": 59,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				}]
+			},
+
+			{
+				"descCh": "温热",
+				"descEn": "",
+				"enumVal": "9",
+				"relatedFields": [{
+					"sid": "beanCooker",
+					"attributes": [{
+						"name": "action",
+						"enable": 1,
+						"min": 0,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				},
+				{
+					"sid": "timeToFinished",
+					"attributes": [{
+						"name": "reserve",
+						"enable": 0,
+						"min": 0,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 1
+					},
+					{
+						"name": "hour",
+						"enable": 0,
+						"min": 3,
+						"max": 11,
+						"step": 1,
+						"defaultVal": 3
+					},
+					{
+						"name": "min",
+						"enable": 0,
+						"min": 0,
+						"max": 59,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				},
+				{
+					"sid": "leftTimeToFinished",
+					"attributes": [{
+						"name": "hour",
+						"enable": 1,
+						"min": 3,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 3
+					},
+					{
+						"name": "min",
+						"enable": 1,
+						"min": 0,
+						"max": 59,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				}]
+			},
+
+			{
+				"descCh": "点动 /清洗",
+				"descEn": "",
+				"enumVal": "10",
+				"relatedFields": [{
+					"sid": "beanCooker",
+					"attributes": [{
+						"name": "action",
+						"enable": 1,
+						"min": 0,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				},
+				{
+					"sid": "timeToFinished",
+					"attributes": [{
+						"name": "reserve",
+						"enable": 0,
+						"min": 0,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 1
+					},
+					{
+						"name": "hour",
+						"enable": 0,
+						"min": 3,
+						"max": 11,
+						"step": 1,
+						"defaultVal": 3
+					},
+					{
+						"name": "min",
+						"enable": 0,
+						"min": 0,
+						"max": 59,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				},
+				{
+					"sid": "leftTimeToFinished",
+					"attributes": [{
+						"name": "hour",
+						"enable": 1,
+						"min": 3,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 3
+					},
+					{
+						"name": "min",
+						"enable": 1,
+						"min": 0,
+						"max": 59,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				}]
+			},
+
+			{
+				"descCh": "云食谱",
+				"descEn": "",
+				"enumVal": "11",
+				"relatedFields": [{
+					"sid": "beanCooker",
+					"attributes": [{
+						"name": "action",
+						"enable": 1,
+						"min": 0,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				},
+				{
+					"sid": "timeToFinished",
+					"attributes": [{
+						"name": "reserve",
+						"enable": 0,
+						"min": 0,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 1
+					},
+					{
+						"name": "hour",
+						"enable": 0,
+						"min": 3,
+						"max": 11,
+						"step": 1,
+						"defaultVal": 3
+					},
+					{
+						"name": "min",
+						"enable": 0,
+						"min": 0,
+						"max": 59,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				},
+				{
+					"sid": "leftTimeToFinished",
+					"attributes": [{
+						"name": "hour",
+						"enable": 1,
+						"min": 3,
+						"max": 1,
+						"step": 1,
+						"defaultVal": 3
+					},
+					{
+						"name": "min",
+						"enable": 1,
+						"min": 0,
+						"max": 59,
+						"step": 1,
+						"defaultVal": 0
+					}]
+				}]
+			}],
+			"method": "RW"
+		},
+
+		{
+			"characteristicName": "action",
+			"characteristicType": "bool",
+			"enumList": [{
+				"enumVal": "0",
+				"descCh": "停止",
+				"descEn": ""
+			},
+			{
+				"enumVal": "1",
+				"descCh": "启动",
+				"descEn": ""
+			}],
+			"method": "RW"
+		},
+		{
+			"characteristicName": "taste",
+			"characteristicType": "int",
+			"enumList": [{
+				"enumVal": "2",
+				"descCh": "冷饮",
+				"descEn": ""
+			},
+			{
+				"enumVal": "1",
+				"descCh": "热饮",
+				"descEn": ""
+			}],
+			"method": "RW"
+		}],
+		"serviceId": "joyoung",
+		"serviceType": "joyoung"
+	},
+	{
+		"characteristics": [{
+			"characteristicName": "reserve",
+			"characteristicType": "bool",
+			"method": "RW"
+		},
+		{
+			"characteristicName": "sec",
+			"characteristicType": "int",
+			"max": 59,
+			"method": "RW",
+			"min": 0
+		},
+		{
+			"characteristicName": "min",
+			"characteristicType": "int",
+			"max": 59,
+			"method": "RW",
+			"min": 0
+		},
+		{
+			"characteristicName": "hour",
+			"characteristicType": "int",
+			"max": 23,
+			"method": "RW",
+			"min": 0
+		},
+		{
+			"characteristicName": "workTime",
+			"characteristicType": "int",
+			"max": 1440,
+			"method": "RW",
+			"min": 0
+		}],
+		"serviceId": "timeToFinished",
+		"serviceType": "timeToFinished"
+	},
+	{
+		"characteristics": [{
+			"characteristicName": "action",
+			"characteristicType": "int",
+			"max": 1,
+			"method": "W",
+			"min": 0
+		},
+		{
+			"characteristicName": "version",
+			"characteristicType": "string",
+			"maxLength": 64,
+			"method": "R"
+		},
+		{
+			"characteristicName": "introduction",
+			"characteristicType": "string",
+			"maxLength": 1024,
+			"method": "R"
+		},
+		{
+			"characteristicName": "progress",
+			"characteristicType": "int",
+			"method": "R"
+		},
+		{
+			"characteristicName": "bootTime",
+			"characteristicType": "int",
+			"method": "R",
+			"unit": "秒"
+		}],
+		"serviceId": "update",
+		"serviceType": "devOta"
+	},
+	{
+		"serviceId": "update",
+		"serviceType": "devOta",
+		"characteristics": [{
+			"characteristicName": "action",
+			"characteristicType": "int",
+			"min": 0,
+			"max": 1,
+			"method": "W",
+			"enumList": [{
+				"enumVal": "0",
+				"descCh": "检查升级",
+				"descEn": ""
+			},
+			{
+				"enumVal": "1",
+				"descCh": "启动升级",
+				"descEn": ""
+			}]
+		},
+		{
+			"characteristicName": "version",
+			"characteristicType": "string",
+			"maxLength": 64,
+			"method": "R"
+		},
+		{
+			"characteristicName": "introduction",
+			"characteristicType": "string",
+			"maxLength": 1024,
+			"method": "R"
+		},
+		{
+			"characteristicName": "progress",
+			"characteristicType": "int",
+			"method": "R"
+		},
+		{
+			"characteristicName": "bootTime",
+			"characteristicType": "int",
+			"method": "R",
+			"unit": "秒"
+		}]
+	},{
+		"serviceId": "faultDetection",
+		"serviceType": "faultDetection",
+		"characteristics": [
+		{
+			"characteristicName": "code",
+			"characteristicType": "int",
+			"method": "W",
+			"enumList": [
+			{
+				"enumVal": "0",
+				"descCh": "杯盖异常",
+				"descEn": "No water failure"
+			},
+			{
+				"enumVal": "1",
+				"descCh": "电压不稳",
+				"descEn": "No water failure"
+			},{
+				"enumVal": "2",
+				"descCh": "上盖传感器开路",
+				"descEn": "No water failure"
+			},
+			{
+				"enumVal": "3",
+				"descCh": "电压不稳",
+				"descEn": "Anti-overflow exception failure"
+			},
+			{
+				"enumVal": "4",
+				"descCh": "电压不稳",
+				"descEn": "Heating overtime failure"
+			},
+			{
+				"enumVal": "5",
+				"descCh": "测温出现异常",
+				"descEn": "Voltage abnormally faulty"
+			},
+			{
+				"enumVal": "6",
+				"descCh": "测温出现异常",
+				"descEn": "Zero signal failure"
+			},
+			{
+				"enumVal": "7",
+				"descCh": "通讯异常",
+				"descEn": "Communication error"
+			},
+			{
+				"enumVal": "8",
+				"descCh": "电机自动启动保护",
+				"descEn": "Temperature abnormally faulty"
+			},
+			{
+				"enumVal": "9",
+				"descCh": "食物过大",
+				"descEn": "Current detection is abnormal"
+			},
+			{
+				"enumVal": "10",
+				"descCh": "机器水量过少",
+				"descEn": "Circuit board temperature anomaly"
+			},
+			{
+				"enumVal": "11",
+				"descCh": "机器故障",
+				"descEn": "Temperature abnormally faulty"
+			},
+			{
+				"enumVal": "12",
+				"descCh": "机器故障",
+				"descEn": "Current detection is abnormal"
+			},
+			{
+				"enumVal": "13",
+				"descCh": "杯盖异常",
+				"descEn": "Circuit board temperature anomaly"
+			}]
+		},
+		{
+			"characteristicName": "suggestion",
+			"characteristicType": "int",
+			"method": "W",
+			"enumList": [
+			{
+				"enumVal": "0",
+				"descCh": "麻烦您将杯盖再次彻底清洗后，再开始启动工作。",
+				"descEn": "Please refer to the cup water level line correctly add ingredients and water or send after-sales service maintenance"
+			},
+			{
+				"enumVal": "1",
+				"descCh": "抱歉，因电压不稳，导致工作异常，需要等市电稳定后才能开始工作哦。",
+				"descEn": "Please refer to the cup water level line correctly add ingredients and water or send after-sales service maintenance"
+			},
+			{
+				"enumVal": "2",
+				"descCh": "麻烦您再次确认上盖是否盖紧、旋到位。上盖盖好后，10秒内产品将继续运行。",
+				"descEn": "Please refer to the cup water level line correctly add ingredients and water or send after-sales service maintenance"
+			},
+			{
+				"enumVal": "3",
+				"descCh": "抱歉，因电压不稳，导致工作异常，需要等市电稳定后才能开始工作哦",
+				"descEn": "Please refer to the cup water level line correctly add ingredients and water or send after-sales service maintenance"
+			},
+			{
+				"enumVal": "4",
+				"descCh": "抱歉，因电压不稳，导致工作异常，需要等市电稳定后才能开始工作哦",
+				"descEn": "Please refer to the cup water level line correctly add ingredients and water or send after-sales service maintenance"
+			},
+			{
+				"enumVal": "5",
+				"descCh": "测温出现异常，请您先断开电源，再重新通电开机工作。如未解决，请联系售后人员。",
+				"descEn": "Re-plug to confirm whether the normal or after-sales service to repair"
+			},
+			{
+				"enumVal": "6",
+				"descCh": "测温出现异常，请您先断开电源，再重新通电开机工作。如未解决，请联系售后人员",
+				"descEn": "Re-plug to confirm whether the normal or after-sales service to repair"
+			},
+			{
+				"enumVal": "7",
+				"descCh": "通讯异常，请您先断开电源，再重新通电开机工作。如未解决，请联系售后人员。",
+				"descEn": "Re-plug to confirm whether the normal or after-sales service to repair"
+			},
+			{
+				"enumVal": "8",
+				"descCh": "电机自动启动保护，请断电1小时后再开机使用。如未解决，请联系售后人员。",
+				"descEn": "Sent after-sales service maintenance"
+			},
+			{
+				"enumVal": "9",
+				"descCh": "请您将食材切成小块或增加水及其他液体，避免大块食材或过稠",
+				"descEn": "Please add the ingredients and add the ingredients to the service"
+			},
+			{
+				"enumVal": "10",
+				"descCh": "杯底干烧，请加水等液体；食材超量或过浓，请您清理干净杯底，并按照说明书要求重新添加食材。",
+				"descEn": "Sent after-sales service maintenance"
+			},{
+				"enumVal": "11",
+				"descCh": "请联系九阳售后人员处理。服务热线400-6186-999",
+				"descEn": "Sent after-sales service maintenance"
+			},
+			{
+				"enumVal": "12",
+				"descCh": "请联系九阳售后人员处理。服务热线400-6186-999",
+				"descEn": "Please add the ingredients and add the ingredients to the service"
+			},
+			{
+				"enumVal": "13",
+				"descCh": "麻烦您将杯盖再次彻底清洗后，再开始启动工作。",
+				"descEn": "Sent after-sales service maintenance"
+			}]
+		},
+		{
+			"characteristicName": "phone",
+			"characteristicType": "string",
+			"method": "RW",
+			"enumList": [{
+				"enumVal": "1",
+				"descCh": "阳光服务热线: 400-6186-999",
+				"descEn": "Sunshine service hotline: 400-6186-999"
+			}]
+		}
+		]
+	}
+	],
+	"quickmenu": [{
+		"content": [{
+			"text": "{joyoung/program%E}",
+			"logic": "or",
+			"conditions": [{
+				"type": "DEVICE_DATA",
+				"path": "joyoung/status",
+				"operator": "=",
+				"value": "1"
+			},
+			{
+				"type": "DEVICE_DATA",
+				"path": "joyoung/status",
+				"operator": "=",
+				"value": "2"
+			}]
+		},
+		{
+			"text": "{joyoung/status%E}"
+		}]
+	}]
+}

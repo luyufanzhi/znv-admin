@@ -1,0 +1,96 @@
+/* nav-bar */
+.ly-tab {
+    padding: 1rem 0;
+    border-style: none;
+    .setZIndex();
+
+    .ly-tab-item-label {
+        padding: 0 1.6rem;
+        margin: 0;
+        font-size: 1.2rem;
+        .setLightCenter(@height);
+    }
+
+    .ly-tab-item {
+        margin: 0;
+        padding: 0;
+    }
+
+    .ly-tab-item-icon {
+        display: none;
+    }
+}
+.ly-tab .ly-tab-list .ly-tab-item:not(:first-child),
+.ly-tab .ly-tab-list .ly-tab-item,
+.ly-tab .ly-tab-list {
+    margin: 0;
+    padding: 0;
+}
+
+/* tab-container */
+.mint-tab-container {
+    box-sizing: border-box;
+    .setWH();
+    4 5.6
+    padding-top: 9.6rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    .mint-tab-container-wrap {
+        box-sizing: border-box;
+        .setWH();
+        padding-top: @titHeight;
+    }
+}
+.mint-tab-container-item {
+    .setWH();
+    box-sizing: border-box;
+    padding: 0 .6rem;
+
+    .carte-container {
+        box-sizing: content-box;
+        width: 50%;
+    }
+    .carte-container:nth-child(2n) {
+
+        .carte  {
+            margin-left: .3rem;
+            margin-right: 0;
+        }
+
+        .img[lazy=loading] {
+            box-sizing: border-box;
+            margin-right: 0;
+            margin-left: .3rem;
+            background: red;
+        }
+    }
+
+    .carte {
+        margin-right: .3rem;
+        margin-bottom: .3rem;
+
+        .img {
+            .setWH(@img_width, @img_width);
+            .setBgi();
+        }
+        /* 设置懒加载 */
+        .img[lazy=loading] {
+            .setWH(@img_width, @img_width);
+            background-image: url(@loaddingData);
+            .setBgi();
+            background-size: 50%;
+        }
+
+        .carte-info {
+            .setLightCenter(4rem);
+            padding: 0 .4rem;
+            font-size: 1.4rem;
+
+            .btn {
+                margin-top: .8rem;
+            }
+        }
+    }
+}

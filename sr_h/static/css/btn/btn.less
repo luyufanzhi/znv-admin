@@ -1,0 +1,75 @@
+@import url("../mixins.less");
+
+@danger: red;
+@primary: @color;
+@default: black;
+@bgc: #f6f6f6;
+
+/* 底部删除添加按钮 */
+.btn-container {
+    box-sizing: border-box;
+    height: @btnHeight * 2;
+    width: 100%;
+    padding: @btnHeight / 2;
+
+    .btn {
+        padding: 0;
+    }
+}
+.btn {
+    height: @btnHeight;
+    background-color: #fff;
+    position: relative;
+    padding: 0 1.2rem;
+    border-radius: 1000rem;
+    border: solid 1px #ccc;
+    box-shadow: 0 0 1px 1px #fff inset;
+    font-size: 1.5rem;
+    color: @primary;
+    text-align: center;
+    box-sizing: border-box;
+    vertical-align: middle;
+    .setCenterUseFlex();
+}
+.btn:active::after {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.btn::after {
+    content: " ";
+    border-radius: 1000rem;
+    box-shadow: 0 0 1px 1px #fff inset;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+/* 按钮大小 */
+.btn-small {
+    font-size: 12px;
+    height: 24px;
+    line-height: 22px;
+    display: inline-block;
+}
+.btn-normal {
+    font-size: 1.5rem;
+    height: 34px;
+    line-height: 32px;
+    display: block;
+    width: 50%;
+}
+.btn-large {
+    width: 100%;
+}
+
+/* 按钮颜色 */
+.btn-danger {
+    color: @danger;
+}
+.btn-primary {
+    color: @primary;
+}
+.btn-default {
+    color: @default;
+}

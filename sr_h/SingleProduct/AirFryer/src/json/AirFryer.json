@@ -1,0 +1,33 @@
+{
+
+"services": [ {
+
+    "st": "cook",
+    "sid": "cook",
+    "data": {
+
+        "status": 1,
+        "action": 0,
+        "recipes": 1,
+        "workTime": 41,
+        "leftTime": 10,
+        "preTimeHour": 0,
+        "preTimeMin": 0,
+        "temperature": 100,
+        "stirSwitch": 0,
+        "preheatSwitch": 1,
+        "recipesCode": 0
+    }
+}, {
+    "st": "faultDetection",
+    "ts": "20151212T121212Z",
+    "sid": "faultDetection",
+    "data": {
+        "code": 0,
+        "status": 0
+    }
+} ],
+
+"status": "online"
+
+}

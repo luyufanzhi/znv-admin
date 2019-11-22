@@ -1,0 +1,87 @@
+{
+    "devId": "d32dd0e7-5015-4565-a995-ca416b317",
+    "nodeType": "05A",
+    "gatewayId": "758cfa12-7d95-45ff-b415-e02c87fd3bda",
+    "devInfo": {
+        "sn": "F0FE6B45B83B",
+        "model": "CXW-200-JQ01TS.H",
+        "devType": "05A",
+        "manu": "027",
+        "mac": "",
+        "hiv": "1.0",
+        "fwv": "8",
+        "hwv": "2.0",
+        "swv": "5015-4565-ca416B317d36",
+        "protType": "1",
+        "prodId": "103M"
+    },
+
+    "services": [{
+
+        "st": "binarySwitch",
+        "sid": "switch",
+        "data": {
+            "on": 0
+        }
+    }, {
+
+        "st": "binarySwitch",
+        "sid": "switch1",
+        "data": {
+            "on": 0
+        }
+    }, {
+
+        "st": "binarySwitch",
+        "sid": "switch2",
+        "data": {
+            "on": 0
+        }
+    }, {
+
+        "st": "binarySwitch",
+        "sid": "switch3",
+        "data": {
+            "on": 0
+        }
+    }, {
+
+        "st": "binarySwitch",
+        "sid": "switch4",
+        "data": {
+            "on": 0
+        }
+    }, {
+
+        "st": "timer",
+        "sid": "timer",
+        "data": {
+            "num": 1,
+            "action": "",
+            "timer": "",
+            "id": "",
+            "sid": "",
+            "enable": "",
+            "week": "",
+            "start": "",
+            "end": "",
+            "para": ""
+        }
+    }, {
+
+        "st": "delay",
+        "sid": "delay",
+        "data": {
+            "num": 1,
+            "action": "",
+            "delay": "",
+            "id": "",
+            "sid": "",
+            "start": "",
+            "end": "",
+            "para": ""
+        }
+    }],
+
+    "status": "online"
+}

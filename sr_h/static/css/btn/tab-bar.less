@@ -1,0 +1,42 @@
+@import url("../mixins.less");
+
+.tab-bar {
+    @tab-bar_height: 4rem;
+    @tab_item_height: 2.8rem;
+    @border_color: #94c8fc;
+    @bgc: #d6e9fc;
+
+    .setBorder(@color: @border_color) {
+        border: 1px solid @color;
+    }
+
+    .wrap {
+        padding: ( @tab-bar_height - @tab_item_height ) / 2 1.6rem;
+        height: @tab-bar_height;
+        box-sizing: border-box;
+
+        .tab-bar-container {
+            box-sizing: border-box;
+            border-radius: @tab_item_height;
+            overflow: hidden;
+            .setCenterUseFlex(row, space-around);
+            .setBorder();
+            .setLightCenter(@tab_item_height);
+
+            .tab-bar-item {
+                box-sizing: border-box;
+                width: 33.33%;
+                text-align: center;
+                border-right: 1px solid @border_color;
+                font-size: 1.2rem;
+            }
+            .tab-bar-item:last-of-type {
+                border-style: none;
+            }
+            .tab-bar-item.active {
+                background: @bgc;
+                color: @color;
+            }
+        }
+    }
+}

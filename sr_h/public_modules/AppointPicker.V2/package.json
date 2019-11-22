@@ -1,0 +1,11 @@
+{
+  "name": "appointpicker.v2",
+  "version": "1.0.0",
+  "description": "预约时间组件, 2列",
+  "main": "./AppointPicker.V2.vue",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zwx518614 <zhuangpinghua@huawei.com>",
+  "license": "ISC"
+}

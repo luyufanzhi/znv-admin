@@ -1,0 +1,11 @@
+{
+  "name": "cellbox",
+  "version": "1.0.0",
+  "description": "cell 组件",
+  "main": "./CellBox.vue",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zwx518614 <zhuangpinghua@huawei.com>",
+  "license": "ISC"
+}

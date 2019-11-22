@@ -1,0 +1,24 @@
+.DS_Store
+
+node_modules/
+_node_modules/
+/dist/
+SingleProduct/**/node_modules
+public_modules/**/node_modules
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.lograr
+
+*.rar
+*.zip
+
+# Editor directories and files
+.idea
+.svn
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+SingleProduct/AirFryer/doc/九阳空气炸锅KL-50G1_profile/~$HiLink设备profile 2.0-104Y-九阳-空气炸锅-KL-50G1-20180119.xlsx
+SingleProduct/AirFryer/doc/九阳空气炸锅KL-50G1_profile/~$华为APP界面与上下行指令对照表_空气炸锅50G1-v1.3.xlsx

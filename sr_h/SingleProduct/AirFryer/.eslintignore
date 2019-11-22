@@ -1,0 +1,10 @@
+/build/
+/config/
+/dist/
+/*.js
+test
+/test/unit/coverage/
+node_modules
+*.min.js
+dist/**
+BottomMenu

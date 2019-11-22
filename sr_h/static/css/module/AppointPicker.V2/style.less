@@ -1,0 +1,30 @@
+@import url("../../mixins.less");
+
+// padding: 0 1.6rem;
+
+.picker-item.picker-selected {
+    font-size: 2rem;
+    color: #0079ff;
+}
+
+.picker-item.picker-selected::after {
+    font-size: 1.2rem;
+}
+
+.l .picker-item.picker-selected::after {
+    content: "时";
+}
+
+.r .picker-item.picker-selected::after {
+    content: "分";
+}
+
+.picker-item {
+    font-size: 1.5rem;
+    color: @black_5;
+}
+
+.picker-center-highlight, .picker-item.picker-selected {
+    height: 4.2rem!important;
+    line-height: 4.2rem!important;
+}

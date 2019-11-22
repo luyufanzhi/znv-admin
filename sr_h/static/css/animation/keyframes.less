@@ -1,0 +1,27 @@
+/*  旋转 */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+    }
+}
+
+/* 底部向上出现 */
+.appear {
+    animation: appear 400ms ease-in-out 0ms;
+}
+
+@keyframes appear {
+    0% {
+        bottom: -100%;
+    }
+    to {
+        bottom: 2rem;
+    }
+}

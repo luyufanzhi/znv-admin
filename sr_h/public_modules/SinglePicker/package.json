@@ -1,0 +1,11 @@
+{
+  "name": "singlepicker",
+  "version": "1.0.0",
+  "description": "选择器, 单列",
+  "main": "./SinglePicker.vue",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zwx518614 <zhuangpinghua@huawei.com>",
+  "license": "ISC"
+}

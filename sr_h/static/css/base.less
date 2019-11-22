@@ -1,0 +1,101 @@
+@import url("./params.less");
+@import './media.less';
+@import './mixins.less';
+
+
+
+/* 去除默认样式 */
+ul, li, body, p, h2 {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 基本样式 */
+html, body {
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+
+    /* 禁止用户选取文本 */
+   -moz-user-select: none; /*火狐*/
+   -webkit-user-select: none; /*webkit览器*/
+   -ms-user-select: none; /*IE10*/
+   user-select: none;
+
+   /* 默认行高 */
+//    line-height: 130%;
+
+   -webkit-tap-highlight-color: transparent;
+}
+
+/* 测试用 */
+.txt.test {
+    display: none;
+    .setPosition();
+    z-index: 100;
+    font-size: 14px;
+    color: rgba(255, 255, 255, .3);
+    padding-top: @titHeight;
+
+    h1.txt {
+        font-size: 14px;
+        padding: 0 .5em;
+    }
+}
+button.test {
+    position: fixed;
+    left: 30px;
+    top: 30px;
+    z-index: 999;
+}
+
+/* 辅助类 */
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    font-size: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+.device-title {
+    width: 100%;
+    height: @titHeight;
+}
+
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+.tr {
+    text-align: right;
+}
+.tl {
+    text-align: left;
+}
+.tc {
+    text-align: center;
+}
+
+/* 置灰 */
+.isDisable {
+    opacity: .3;
+}
+.isDisable.btn::after {
+    content: none!important;
+}
